@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Style for the dark theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+
+    <style name="AppTheme.Night" parent="AppTheme.Base">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/deepGray</item>
+        <item name="android:statusBarColor">@color/colorBackgroundInverse</item>
+        <item name="android:colorBackground">@color/colorBackgroundInverse</item>
+        <item name="android:textColorPrimary">@color/textColorPrimaryInverse</item>
+        <item name="android:textColorSecondary">@color/textColorSecondaryInverse</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="SplashTheme" parent="SplashTheme.Night.Legacy" />
+
+    <style name="SplashTheme.Night" parent="SplashTheme.Base">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/colorBackgroundInverse</item>
+        <item name="android:colorBackground">@color/colorBackgroundInverse</item>
+        <item name="android:navigationBarColor">@color/colorBackgroundInverse</item>
+    </style>
+
+    <style name="SplashTheme.Night.Legacy">
+        <item name="android:windowBackground">@drawable/static_birday_dark</item>
+    </style>
+
+</resources>

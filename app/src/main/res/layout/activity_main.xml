@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <!-- to scroll in the table -->
+
+
+    <Button
+        android:id="@+id/buttonWritePerm"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@+id/buttonReadPerm"
+        android:text="@string/write_permission"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonReadPerm"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/read_permission"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="195dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/add_person" />
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="472dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="201dp"
+        android:scrollbars="none">
+
+        <TableLayout
+            android:id="@+id/table_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button"
+            android:layout_margin="10dp"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal">
+
+            &lt;!&ndash; Table Heading &ndash;&gt;
+            <TableRow android:background="@android:color/holo_blue_bright">
+
+                <TextView
+                    android:id="@+id/cell_1_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/last_name"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cell_1_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/first_name"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cell_1_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/birthday"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cell_1_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/mobile"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>-->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/create_person" />
+
+</RelativeLayout>
